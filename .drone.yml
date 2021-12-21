@@ -21,6 +21,8 @@ steps:
       from_secret: npm_password
     email:
       from_secret: npm_email
+    token:
+      from_secret: npm_token
   when:
     event:
     - tag
