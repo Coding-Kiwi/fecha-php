@@ -1,6 +1,6 @@
 {
   "name": "fecha-php",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Translate from php datetime format to fetcha format",
   "main": "index.js",
   "directories": {
