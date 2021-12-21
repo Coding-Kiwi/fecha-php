@@ -1,0 +1,25 @@
+{
+  "name": "fecha-php",
+  "version": "1.0.0",
+  "description": "Translate from php datetime format to fetcha format",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "fecha",
+    "php",
+    "laravel",
+    "datetime",
+    "date"
+  ],
+  "author": "CodingKiwi",
+  "license": "ISC",
+  "devDependencies": {
+    "fecha": "^4.2.1",
+    "mocha": "^9.1.3"
+  }
+}
