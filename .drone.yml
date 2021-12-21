@@ -3,6 +3,15 @@ type: docker
 name: default
 
 steps:
+
+- name: test
+  image: lorisleiva/laravel-docker
+  commands:
+  - node -v
+  - npm -v
+  - npm ci
+  - npm run test
+
 - name: npm
   image: plugins/npm
   settings:
