@@ -6,13 +6,13 @@ This is useful if you for example have a js datepicker in a laravel php applicat
 
 ## Usage
 
-[npm @codingkiwi/fecha-php](https://www.npmjs.com/package/@codingkiwi/fecha-php)
+[npm fecha-php](https://www.npmjs.com/package/fecha-php)
 ```
-npm i @codingkiwi/fecha-php
+npm i fecha-php
 ```
 
 ```js
-const convert = require("@codingkiwi/fecha-php");
+const convert = require("fecha-php");
 
 
 const phpFormat = convert.fechaToPhp("YY-MM-DD HH:mm:ss")

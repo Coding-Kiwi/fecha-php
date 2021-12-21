@@ -9,6 +9,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://git.codingkiwi.de/codingkiwi/fecha-php"
+  },
   "keywords": [
     "fecha",
     "php",
