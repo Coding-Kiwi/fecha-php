@@ -4,13 +4,17 @@ name: default
 
 steps:
 
-- name: test
+- name: build
   image: lorisleiva/laravel-docker
   commands:
   - node -v
   - npm -v
   - npm ci
   - npm run build
+
+- name: test
+  image: lorisleiva/laravel-docker
+  commands:
   - npm run test
 
 - name: npm
