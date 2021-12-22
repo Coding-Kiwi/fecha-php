@@ -2,7 +2,7 @@
 
 [![Build Status](https://drone.codingkiwi.dev/api/badges/codingkiwi/fecha-php/status.svg)](https://drone.codingkiwi.dev/codingkiwi/fecha-php)
 
-Simple tool to convert from php datetime format to fecha format
+Simple tool to convert from php datetime format to [fecha](https://www.npmjs.com/package/fecha) format (~960 Bytes minified + gzipped)
 
 This is useful if you for example have a js datepicker in a laravel php application and you want to use the same format at both places.
 
