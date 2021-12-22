@@ -1,4 +1,4 @@
-const convert = require("../index.js");
+const convert = require("../dist/index.min.js");
 const fecha = require("fecha");
 const assert = require("assert");
 const { execSync } = require('child_process');
