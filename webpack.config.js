@@ -1,10 +1,10 @@
-const path = require('path');
+import path from 'path';
 
-module.exports = {
+export default {
     mode: 'production',
     entry: './index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve('./dist'),
         filename: 'index.min.js',
         globalObject: 'this',
         library: {

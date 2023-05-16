@@ -122,7 +122,7 @@ function fechaToPhp(format) {
     return newFormat.replace(/@@@/g, () => literals.shift());
 }
 
-module.exports = {
+export {
     phpToFecha,
     fechaToPhp
 }

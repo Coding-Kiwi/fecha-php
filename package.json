@@ -2,7 +2,8 @@
   "name": "fecha-php",
   "version": "1.0.4",
   "description": "Translate from php datetime format to fetcha format",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "test"
   },

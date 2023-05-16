@@ -1,7 +1,7 @@
-const convert = require("../dist/index.min.js");
-const fecha = require("fecha");
-const assert = require("assert");
-const { execSync } = require('child_process');
+import * as convert from "../index.js";
+import fecha from "fecha";
+import assert from "assert";
+import { execSync } from "child_process";
 
 const fechaDates = [
     "MMMM Do, YYYY",
@@ -32,11 +32,11 @@ const phpDates = [
 
 process.env.TZ = 'Europe/Berlin';
 
-describe('fechaToPhp', function() {
+describe('fechaToPhp', function () {
     for (const date of fechaDates) {
         let converted = convert.fechaToPhp(date);
 
-        it('Output of "' + date + '" and "' + converted + '" should match', function() {
+        it('Output of "' + date + '" and "' + converted + '" should match', function () {
             let phpDate = execSync('php -r "date_default_timezone_set(\'' + process.env.TZ + '\'); echo date(\'' + converted + '\');"').toString();
             let fechaDate = fecha.format(new Date(), date);
             assert.equal(phpDate, fechaDate);
@@ -44,11 +44,11 @@ describe('fechaToPhp', function() {
     }
 });
 
-describe('phpToFecha', function() {
+describe('phpToFecha', function () {
     for (const date of phpDates) {
         let converted = convert.phpToFecha(date);
 
-        it('Output of "' + date + '" and "' + converted + '" should match', function() {
+        it('Output of "' + date + '" and "' + converted + '" should match', function () {
             let phpDate = execSync('php -r "date_default_timezone_set(\'' + process.env.TZ + '\'); echo date(\'' + date + '\');"').toString();
             let fechaDate = fecha.format(new Date(), converted);
             assert.equal(phpDate, fechaDate);
